@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
+.venv/
+.DS_Store
+Thumbs.db
+static/uploads/*
+!static/uploads/.gitkeep
+model/*.pth
+!model/brain_tumor_model.pth

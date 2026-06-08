@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Prediction Result</h1>
+        <p>{{ prediction }}</p>
+        {% if filename %}
+        <p>Uploaded file: {{ filename }}</p>
+        {% endif %}
+        <a href="/">Back to Home</a>
+      </section>
+    </main>
+  </body>
+</html>
