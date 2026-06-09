@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="UTF-8">
 
     <title>Prediction Result</title>
 
     <link rel="stylesheet"
-          href="{{ url_for('static', filename='css/style.css') }}">
+    href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>🧠 Prediction Result</h1>
+    <div class="card result">
+
+        <h1>🧠 Analysis Report</h1>
 
         <img
-            src="{{ url_for('static', filename='uploads/' + image) }}"
-            alt="MRI Scan"
-        >
+        src="{{ url_for('static', filename='uploads/' + image) }}">
 
-        <h2>
+        <div class="prediction">
             Prediction: {{ prediction }}
-        </h2>
+        </div>
 
         <br>
 
         <a href="/">
-            Analyze Another Image
+            <button>
+                Analyze Another MRI
+            </button>
         </a>
 
     </div>
 
-</body>
+</div>
 
+</body>
 </html>
